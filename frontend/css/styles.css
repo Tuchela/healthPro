@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* utitlity */
+
+:root {
+  --primary-color: #9b77fe;
+  --secondary-color: #807593;
+  --background-color: #ffffff;
+  --border-color: #9e9e9e;
+  --current: #C5DCFF80;
+  --color: #000000;
+  --btn-color: #e1e1e1;
+  --font-family: "Roboto Condensed", serif;
+  --transition: all 0.3s linear;
+  --p-line-height: 1.3;
+  --h-line-height: 1.5;
+  --font-size: 3.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--h-line-height);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: var(--p-line-height);
+  font-size: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  color: var(--color);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: var(--btn-color);
+  border-radius: 13px;
+}
+
+.btn-dark:hover {
+  opacity: 0.9;
+}
+
+.btn-light {
+  background: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 13px;
+}
+
+.container {
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+/* utitlity end */
+
+/* header */
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-items .logo img {
+  width: 50px;
+  height: auto;
+}
+
+.nav-items .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-lists {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-lists li a {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-items ul li a.current {
+  background: var(--current);
+  color: var(--color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.nav-items ul li a.current:hover{
+  opacity: 0.9;
+}
+.fa-solid {
+  display: none;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items .auth button {
+  margin: .5rem; 
+}
+/* header end */
