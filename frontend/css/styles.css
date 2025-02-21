@@ -12,14 +12,13 @@
   --secondary-color: #807593;
   --background-color: #ffffff;
   --border-color: #9e9e9e;
-  --current: #C5DCFF80;
+  --current: #c5dcff80;
   --color: #000000;
   --btn-color: #e1e1e1;
   --font-family: "Roboto Condensed", serif;
   --transition: all 0.3s linear;
   --p-line-height: 1.3;
   --h-line-height: 1.5;
-  --font-size: 3.5rem;
 }
 
 html {
@@ -28,7 +27,7 @@ html {
 
 body {
   font-family: var(--font-family);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   color: var(--color);
 }
 
@@ -53,19 +52,19 @@ h4,
 h5,
 h6 {
   line-height: var(--h-line-height);
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-family: var(--font-family);
 }
 
 p {
   line-height: var(--p-line-height);
-  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   border: none;
+  gap: 1.3rem;
   color: var(--color);
   font-size: 16px;
   font-weight: bold;
@@ -77,6 +76,11 @@ p {
   border-radius: 13px;
 }
 
+.category {
+  display: inline-block;
+  padding: 2rem 4rem;
+  margin-top: 10rem;
+}
 .btn-dark:hover {
   opacity: 0.9;
 }
@@ -89,7 +93,7 @@ p {
 
 .container {
   margin: auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   overflow: hidden;
 }
 /* utitlity end */
@@ -100,6 +104,12 @@ p {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.nav-items .logo h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav-items .logo img {
@@ -131,7 +141,7 @@ p {
   border-radius: 5px;
 }
 
-.nav-items ul li a.current:hover{
+.nav-items ul li a.current:hover {
   opacity: 0.9;
 }
 .fa-solid {
@@ -141,9 +151,120 @@ p {
 .auth {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .nav-items .auth button {
-  margin: .5rem; 
+  margin: 0.5rem;
 }
 /* header end */
+
+/* hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  width: 590px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  width: 675.9px;
+  height: 150px;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.background {
+  position: absolute;
+  width: 45.9%;
+  height: auto;
+  top: -199px;
+  right: 0;
+}
+
+.hero-img-wrapper {
+  width: 40%;
+}
+
+.human1,
+.human2 {
+  width: 30%;
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+}
+
+.human2 {
+  right: 30px;
+}
+
+/* hero section end */
+
+/* vaccine container */
+.vaccine-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 5rem; */
+}
+
+.vaccine-image {
+  flex: 1;
+}
+
+.vaccine-image img {
+  width: 850px;
+  height: 670px;
+}
+
+.vaccine-content {
+  flex: 1;
+}
+
+.vaccine-content p:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vaccine-content p:nth-child(2) {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.vaccine-content p:nth-child(3) {
+  font-size: 1.3rem;
+  width: 620px;
+  margin-bottom: 1rem;
+}
+
+.vaccine-content p:nth-child(4) {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.vaccine-content p:nth-child(5) {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.vaccine-content button {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+/* vaccine container end */
